@@ -4,7 +4,7 @@
 	 * 
 	 * The below functions modify exposed filters on a view to allow
 	 * Dates to be handled in an "Australian" method : dd/mm/yyyy
-	 * requires BEF, Date, Jquery.ui.datepicker
+	 * requires BEF, Date, Date Views, Jquery.ui.datepicker
 	 * 
 	 */
 
