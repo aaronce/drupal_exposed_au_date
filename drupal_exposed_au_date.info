@@ -1,0 +1,4 @@
+name = drupal_exposed_au_date
+description = custom code for date formats in exposed filters (views 3.x)
+package = Other
+core = 7.x

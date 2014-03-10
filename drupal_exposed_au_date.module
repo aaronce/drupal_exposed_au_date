@@ -1,0 +1,22 @@
+<?php
+
+	/**
+	 * 
+	 * The below functions modify exposed filters on a view to allow
+	 * Dates to be handled in an "Australian" method : dd/mm/yyyy
+	 * requires BEF, Date, Jquery.ui.datepicker
+	 * 
+	 */
+
+
+	/**
+	 * Implements hook_js_alter().
+	 */
+	function drupal_exposed_au_date_js_alter(&$js) {
+		$js['settings']['data'][] = array('better_exposed_filters'=> array('datepicker_options' => array('dateformat'=>'dd/mm/yy')));
+	}
+
+	function drupal_exposed_au_date_form_views_exposed_form_alter(&$form, $form_state) {
+		$form['field_upload_date2_value']['value']['#date_format'] = "d/m/Y";
+	}
+	
